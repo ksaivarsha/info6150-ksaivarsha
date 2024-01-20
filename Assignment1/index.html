@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        body {
+            font-family: 'Helvetica';
+            color: #4a2f2f;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            font-family: 'Courier New';
+            background-color: #7e9756;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            text-decoration: none;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            text-decoration: none;
+            display: inline;
+            margin-right: 20px;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 3px solid #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #f3eeee;
+            padding: 1em;
+            text-align: center;
+        }
+
+        audio, video {
+            margin-top: 20px;
+        }
+    </style>
+    <title>Book Haven</title>
+</head>
+<body>
+    <header>
+        <h1>Book Haven: Unveiling Timeless Tales</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" >Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome!</h2>
+        <img width="100%" src="images/books.jpg" alt="Books">
+        <p>Welcome to Book Haven, your literary escape into a world of enchanting stories and timeless wonders!<br><br>Immerse yourself in the joy of reading as we curate a collection of captivating books for every reader. Explore, discover, and let the pages unfold your next great adventure. Happy reading!.</p>
+    </section>
+    <hr>
+    <section id="books">
+        <h2>Our Book Corner</h2>
+        <p>Below are a list of books we love and cherish from each genre!<br>We hope you shall enjoy them as much as we do!</p>
+        <table>
+            <tr>
+                <td><b>Name</b></td>
+                <td><b>Role</b></td>
+            </tr>
+            <tr>
+                <td>Young Adult (YA) Romance</td>
+                <td>"Eleanor & Park" by Rainbow Rowell</td>
+            </tr>
+            <tr>
+                <td>Fantasy</td>
+                <td>"The Hobbit" by J.R.R. Tolkien</td>
+            </tr>
+            <tr>
+                <td>Science Fiction</td>
+                <td>"Dune" by Frank Herbert</td>
+            </tr>
+            <tr>
+                <td>Fiction</td>
+                <td>"The Kite Runner" by Khaled Hosseini</td>
+            </tr>
+            <tr>
+                <td>Crime</td>
+                <td>"In the Woods" by Tana French</td>
+            </tr>
+            <tr>
+                <td>Romance</td>
+                <td>"Pride and Prejudice" by Jane Austen</td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+
+    <section id="explore">
+        <h2>Explore More!</h2>
+        <summary>Below are links and videos for other reading blogs that have good suggestions so you can expand your library!</summary>
+        <ul>
+            <li><a href="https://pagesunbound.wordpress.com/">Pages Unbound</a></li>
+            <li><a href="https://rebbiereviews.wordpress.com/">Rebbie Reviews</a></li>
+            <li><a href="https://littlebirdbookblog.com/">Little Bird Book Blog</a></li>
+            <li><a href="https://cozywithbooks.wordpress.com/">Cozy With Books</a></li>
+            <li><a href="https://litlemonbooks.com/">Lit Lemon Books</a></li>
+        </ul>
+        <br>
+            On the same note, here are book reviews on YouTube to checkout:
+            <br><video width="320" height="240" controls>
+                <source src="images/book_pages_04.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+    </section>
+<hr>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Drop us your suggestions!</p>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <address>
+            <p>Contact us at <a href="tel:+123456789">+1 (234) 567-89</a> or <a href="mailto:info@example.com">info@example.com</a></p>
+        </address>
+    </section>
+
+    <footer>
+        <p>For Some Extra Ambience</p>
+        <audio controls>
+            <source src="images/music.mp3" type="audio/mp3">
+            
+        </audio>
+    </footer>
+
+
+   
+</body>
+</html>
