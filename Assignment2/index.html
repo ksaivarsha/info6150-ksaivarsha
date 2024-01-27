@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Professional Portfolio</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <h1>K Sai Varsha</h1>
+            
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+
+    <main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Persuing Master's in Software Engineering Systems at Northeastern University.</p>
+        <p>My hobbies include reading, writing, listening to music.</p>
+        <p>My favourite movie:</p>
+        <video width="320" height="240" controls>
+                <source src="images/book_pages_04.mov" type="video/mp4">
+       
+    </section>
+
+    <hr>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Position</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>Franklin Templeton</td>
+                <td>Software Engineer</td>
+                <td>07/2022 - 12/2023</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <ul>
+            <li><a href="images/photo1.jpg"><img src="images/photo1thumb.jpg" 
+                 width="100"   height="75" alt="Certificate 1">
+                 <span><img src="images/photo1.jpg" width="250" height="150"
+                  alt="Certificate 1"><br>Certificate 1</span></a>
+            </li>
+             <li><a href="images/photo2.jpg"><img src="images/photo2thumb.jpg" 
+                 width="100"   height="75" alt="Certificate 2">
+                 <span><img src="images/photo2.jpg" width="250" height="150"
+                  alt="Certificate 2"><br>Certificate 2</span></a>
+            </li>
+             <li><a href="images/photo3.jpg"><img src="images/photo3thumb.jpg" 
+                 width="100"   height="75" alt="Certificate 3">
+                 <span><img src="images/photo3.jpg" width="250" height="150"
+                  alt="Certificate 3"><br>Certificate 3</span></a>
+            </li>
+             <li><a href="images/photo4.jpg"><img src="images/photo4thumb.jpg" 
+                 width="100"   height="75" alt="Certificate 4">
+                 <span><img src="images/photo4.jpg" width="250" height="150"
+                  alt="Certificate 4"><br>Certificate 4</span></a>
+            </li>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch!</p>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+            <p>Contact me at <a href="tel:+123456789">+1 (234) 567-89</a> or <a href="mailto:info@example.com">info@example.com</a></p>
+        </form>
+    </section>
+
+</main>
+
+    <footer>
+        <p>&copy; 2024 Your Professional Portfolio. All rights reserved.</p>
+        <p>For Some Extra Ambience</p>
+        <audio controls>
+            <source src="images/music.mp3" type="audio/mp3">
+            
+        </audio>
+    </footer>
+
+</div>
+</body>
+</html>
