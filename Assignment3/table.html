@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<!-- Also read chapter 9 from slides - Regular Expressions -->
+
+<html>
+<head>
+	<title>Table CheckList</title>
+	<link rel="stylesheet" type="text/css" href="table.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	
+	
+	<table id="myTable">
+		<tr>
+			<th></th>
+			<th>STUDENT</th>
+			<th>ADVISOR</th>
+			<th>AWARD<br/>STATUS</th>
+			<th>SEMESTER</th>
+			<th>TYPE</th>
+			<th>BUDGET<br />#</th>
+			<th>PERCENTAGE</th>
+		</tr>
+		<tr>
+			<td><input type="checkbox" onclick="onCheckBoxClick(this)" /><br /><br /><a href="javascript:void(0);" onclick="onImageClick(this)">
+				<img src="down.png" width="25px" />
+			</a></td>
+			<td>Student 1</td>
+			<td>Teacher 1</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>12345</td>
+			<td>100%</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" onclick="onCheckBoxClick(this)"/><br /><br /><a href="javascript:void(0);" onclick="onImageClick(this)">
+				<img src="down.png" width="25px" />
+			</a></td>
+			<td>Student 2</td>
+			<td>Teacher 2</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>23456</td>
+			<td>100%</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" onclick="onCheckBoxClick(this)" /><br /><br /><a href="javascript:void(0);" onclick="onImageClick(this)">
+				<img src="down.png" width="25px" />
+			</a></td>
+			<td>Student 3</td>
+			<td>Teacher 3</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>34567</td>
+			<td>100%</td>
+			<!--<td></td>-->
+		</tr>
+	</table>
+
+	<br /><br />
+	
+	<button id="button">SUBMIT SELECTED AWARDS</button>
+	<button id="add" onclick="addNewRow()" >Add New Student</button>
+
+	<nav class="socialmediaicons"></nav>
+	<script src="script.js"></script>
+	
+	<script>
+		window.onload = function () {
+			// This function will be executed when the DOM is fully loaded
+			alert('Name: K Sai Varsha; NU ID: 002489348');
+		};
+	</script>
+	
+</body>
+</html>
