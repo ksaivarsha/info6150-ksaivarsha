@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Feedback</title>
+	<style>
+		label {
+			float: left;
+			width: 150px;
+		}
+
+		#container {
+			width: 700px;
+			margin: auto;
+			background-color: beige;
+		}
+
+		main {
+			padding: 50px;
+		}
+
+		#myTable {
+			border: 2px solid green;
+			border-collapse: collapse;
+			/* margin: 30px 30px 20px 40px; */
+			width: 100%;
+		}
+
+		#myTable td,
+		th {
+			border: 1px solid green;
+			padding: 5px;
+		}
+
+		#myTable th {
+			color: #fff;
+			background-color: #a7c942;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+
+		<main>
+			<h2>Feeback</h2>
+			<h3>Love something? Hate something? Let us know!</h3>
+			Note : Fields marked with an asterisk(*) are mandatory
+			<br><br>
+			<form id="myForm">
+				<label>Title*:</label>
+				<input type="radio" name="title" id="miss" value="miss" required="required" />Miss
+				<input type="radio" name="title" id="mr" value="mr" required="required" />Mr.
+				<input type="radio" name="title" id="mrs" value="mrs" required="required" />Mrs.
+				<br><br>
+				<label for="firstName">First Name*:</label>
+				<input type="text" name="firstName" id="firstName" placeholder="First Name" required />
+				<br><br>
+
+				<div id="error_firstName" style="color: red; display: none;">
+					Invalid First Name! Please Enter Valid First Name
+				</div>
+				<br><br>
+
+
+				<label for="lastName">Last Name*:</label>
+				<input type="text" name="lastName" id="lastName" placeholder="Last Name" required />
+				<br><br>
+
+				<div id="error_lastName" style="color: red; display: none;">
+					Invalid Last Name! Please Enter Valid Last Name
+				</div><br><br>
+
+
+				<label for="emailId">Email Id*:</label>
+				<input type="text" name="emailId" id="emailId" placeholder="yourname@northeastern.edu" required />
+				<br><br>
+
+				<div id="error_emailId" style="color: red; display: none;">
+					Invalid Email ID! Please Enter Valid Email ID
+				</div>
+				<br><br>
+
+
+				<label for="phoneNumber">Phone Number*:</label>
+				<input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" required />
+				<br><br>
+
+				<div id="error_phoneNumber" style="color: red; display: none;">
+					Invalid Phone Number! Please Enter Valid Phone Number
+				</div>
+				<br><br>
+
+				<label for="streetAddress1">Street Address 1*:</label>
+				<input type="text" name="streetAddress1" id="streetAddress1" placeholder="address" required />
+				<br><br>
+
+				<!-- <div id="error_streetAddress1" style="color: red; display: none;">
+					Invalid Street Address! Please Enter Valid Street Address
+				</div>
+				<br><br> -->
+
+				<label for="streetAddress2">Street Address 2:</label>
+				<input type="text" name="streetAddress2" id="streetAddress2" placeholder="address" />
+				<br><br>
+
+				<!-- <div id="error_streetAddress2" style="color: red; display: none;">
+					Invalid Street Address! Please Enter Valid Street Address
+				</div>
+				<br><br> -->
+
+				<label for="city">City*:</label>
+				<input type="text" name="city" id="city" placeholder="city" required />
+				<br><br>
+
+				<div id="error_city" style="color: red; display: none;">
+					Invalid City Name! Please Enter Valid City Name
+				</div>
+				<br><br>
+
+				<label for="state">State*:</label>
+				<input type="text" name="state" id="state" placeholder="state" required />
+				<br><br>
+
+				<div id="error_state" style="color: red; display: none;">
+					Invalid State Name! Please Enter Valid State Name
+				</div>
+				<br><br>
+
+				<label for="zipcode">ZipCode*:</label>
+				<input type="text" name="zipcode" id="zipcode" placeholder="xxxxx" required />
+				<br><br>
+
+				<div id="error_zipcode" style="color: red; display: none;">
+					Invalid Zipcode! Please Enter Valid Zipcode
+				</div>
+				<br><br>
+
+				<label for="howDidYouHear">How did you hear*:</label>
+				<input type='checkbox' name="source" value="facebook" onclick="checkBoxValidation(this)" required />
+				Facebook
+				<input type='checkbox' name="source" value="google" onclick="checkBoxValidation(this)" required />
+				Google
+				<input type='checkbox' name="source" value="yelp" onclick="checkBoxValidation(this)" required /> Yelp
+				<br><br>
+
+				<label for="drinks">Drinks*:</label>
+				<select name="drinks" id="drinks" required="required" onchange="listChanges()">
+					<option value="">--Select Any Drink--</option>
+					<option value="Hot Black Tea">Hot Black Tea</option>
+					<option value="Cold Coffee">Cold Coffee</option>
+					<option value="Lemon Iced Tea">Lemon Iced Tea</option>
+					<option value="Expresso">Expresso</option>
+					<option value="Latte">Latte</option>
+				</select>
+				<br><br>
+
+				<div style="display: none;" id="generatedDiv">
+					<label id="generatedLabel"></label>
+					<input type='checkbox' id="generatedCheckbox" onclick="handleCheckboxActions(this)" />
+					<br><br>
+				</div>
+
+				<div style="display: none;" id="customizationsDiv">
+					<label for="customizations">Any additional customizations*:</label>
+					<textarea name="text" id="customizations" placeholder="Your customizations" rows="2"
+						cols="25"></textarea>
+					<br><br>
+				</div>
+
+				<label for="comments">Comments*:</label>
+				<textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25" required></textarea>
+				<br><br>
+				<input type="submit" value="Submit" name="submit" disabled id="submitButton">
+				<input type="Reset">
+				<br><br>
+			</form>
+			<div style="display: none; text-align: center;" id="tableDiv">
+				<h2>Your Submitted Data:</h2>
+				<table id="myTable">
+				</table>
+				<br><br>
+				<button onclick="handleTableButton()"> Go back to Form </button>
+			</div>
+		</main>
+	</div>
+
+	<script src="script.js">
+
+	</script>
+
+</body>
+
+</html>
