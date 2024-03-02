@@ -95,7 +95,7 @@
 
 .container h1 {
   color: #f4fdff;
-  font-size: 42px;
+  font-size: 50px;
 }
 .container nav {
   display: flex;
@@ -117,11 +117,18 @@
   color: red;
 }
 
+.about-content {
+  padding-left: 50px;
+}
 .about-content .books {
   color: #f4fdff;
 }
+.about-content .books h2 {
+  color: #333;
+  font-size: 42px;
+}
 .about-content table {
-  width: 100%;
+  width: 80%;
   margin-top: 20px;
   border-collapse: collapse;
   color: #f4fdff;
