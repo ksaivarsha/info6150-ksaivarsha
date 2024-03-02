@@ -1,0 +1,103 @@
+@import 'config';
+@import 'utilities';
+@import 'mobile';
+@import 'buttons';
+@import 'about';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $secondary-color ;
+    font-family: $font-stack;
+    line-height: 1.6;
+}
+
+.showcase{
+    //background-color: $primary-color;
+    @include set-background ($primary-color);
+    height: 600px;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+    }
+
+    li{
+        padding: 15px;
+    }
+
+    a{
+        color: $secondary-color;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: $light-color;
+    }
+
+    &-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    img{
+        width: 50%;
+
+    }
+
+    .logo
+    {
+        color: $secondary-color;
+        font-size: 50px;
+    }
+
+    h1{
+        font-size: 42px;
+        line-height: 1.2;
+        color: #333;
+    }
+
+    p{
+        margin: 20px;
+    }
+}
+
+.explore{
+    @include set-background ($primary-color);
+    padding-left: 200px;
+
+    h2{
+        color: #333;
+        font-size: 42px;
+    }
+
+    a{
+        text-decoration: none;
+        color: $secondary-color;
+    }
+
+    a:hover{
+        @include set-background((lighten($primary-color, 30)));
+        color: $primary-color;
+    }
+}
+
+.footer{
+    p{
+        text-align: center;
+    @include set-background($secondary-color);
+    }
+    
+}

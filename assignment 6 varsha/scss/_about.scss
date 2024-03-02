@@ -1,0 +1,71 @@
+@import 'config';
+@import 'utilities';
+@import 'mobile';
+
+// @import 'sections';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $primary-color;
+}
+
+
+.container{
+
+    h1{
+        color: $secondary-color;
+        font-size: 50px;
+
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+    }
+
+    li{
+        padding: 15px;
+    }
+
+    a{
+        color: $secondary-color;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: $light-color;
+    }
+}
+
+.about-content{
+
+    padding-left: 50px;
+    .books{
+        color: $secondary-color;
+        h2{
+            color: #333;
+            font-size: 42px;
+        }
+        
+    }
+
+    
+  
+    table {
+        width: 80%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        color: $secondary-color;
+    }
+
+    table, th, td {
+        border: 3px solid $secondary-color;
+    }
+}
