@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<title>Simple Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
+</head>
+<body>
+    <div id="container">
+        <h3>Simple Stopwatch</h3>
+		<form id="my-form" name="myForm">
+
+            <div class="time">
+				<label id="result">00:00:00</label>
+			</div>
+			
+            <div class="time">
+                <p>Date: <input type="text" id="datepicker"></p>
+            </div>
+
+            <div class="time">
+                <button id="start" name="start">Start</button>
+                <button id="stop" name="stop">Stop</button>
+                <button id="reset" name="reset">Reset</button>
+            </div>
+	    </form>
+    </div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

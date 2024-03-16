@@ -1,0 +1,64 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(50, 92, 36);
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    width: 500px;
+    margin: 100px auto;
+    /* padding: 20px;
+    background-color: #e6fadd; */
+    /* border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+h3 {
+    text-align: center;
+    color: rgb(228, 252, 222);
+}
+
+.calc {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(228, 252, 222);
+}
+
+input[type="text"],input[type="password"] {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.err_txt{
+    color: red;
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+
+
+#add{
+    width: 23.75%;
+}
+
+#subtract{
+    width: 23.75%;
+}
+
+#multiply{
+    width: 23.75%;
+}
+
+#divide{
+    width: 23.75%;
+}
+

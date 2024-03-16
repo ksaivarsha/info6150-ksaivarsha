@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h3>Login</h3>
+		<form action="index.html" id="login-form" name="loginForm">
+
+            <div class="calc">
+				<label for="email">Email Id:</label>
+				<input type="text" name="email" id="email" placeholder="yourname@northeastern.edu" required="required"/>
+				<div id="err_email" class="err_txt"></div>
+			</div>
+
+			<div class="calc">
+				<label for="uname">User Name:</label>
+				<input type="text" name="uname" id="uname" placeholder="User Name" required="required"/>	
+				<div id="err_uname" class="err_txt"></div>
+			</div>
+			
+            <div class="calc">
+				<label for="pwd">Password:</label>
+				<input type="password" name="pwd" id="pwd" placeholder="Password" required="required"/>	
+				<div id="err_pwd" class="err_txt"></div>
+			</div>
+			
+            <div class="calc">
+				<label for="cpwd">Confirm Password:</label>
+				<input type="password" name="cpwd" id="cpwd" placeholder="Confirm Password" required="required"/>	
+				<div id="err_cpwd" class="err_txt"></div>
+			</div>
+
+			<button id="btn" name="btn" disabled="disabled">Login</button>
+
+	    </form>
+    </div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="login.js"></script>
+</body>
+</html>
+
+
+
